@@ -6,11 +6,11 @@ The purpose of the project was to create a S3 Bucket and upload images and host 
 
 ## Steps Taken
 
-**1. Created an S3 Bucket with a DNS name to link to a URL so that I can use Route53.**
+**-----1. Created an S3 Bucket with a DNS name to link to a URL so that I can use Route53.**
 
 ![S3 Bucket Page](./screenshots/01_create_bucket.png)
 
-**2. Confirmation that bucket was created.**
+**#####2. Confirmation that bucket was created.**
 
 ![Confirmation bucket created](./screenshots/02_confirm_bucket_created.png)
 
