@@ -3,7 +3,7 @@ name: s3-github-actions
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   sync:
@@ -11,7 +11,7 @@ jobs:
     
     steps:
       - name: Checkout Repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Install AWS CLI
         run: |
@@ -25,3 +25,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
           SOURCE_DIR: 'public'      # optional: defaults to entire repository
+        run: |
+          aws s3 sync . arn:aws:s3:::s3-github-actions
