@@ -26,4 +26,4 @@ jobs:
           AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
           SOURCE_DIR: 'public'      # optional: defaults to entire repository
         run: |
-          aws s3 sync . http://s3-github-actions.s3-website-us-east-1.amazonaws.com
+          aws s3 sync . s3://s3-github-actions 
