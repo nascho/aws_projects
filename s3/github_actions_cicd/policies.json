@@ -1,0 +1,18 @@
+{
+  "_comment": "s3 bucket policy",
+  "Id": "Policy1729378839488",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1729378789627",
+      "Action": "s3:*",
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::deploy-cicd-9899",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::471112822072:user/github-actions-user"
+        ]
+      }
+    }
+  ]
+}
