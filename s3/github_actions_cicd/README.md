@@ -48,7 +48,7 @@ The purpose of this exercise was to deploy a CI/CD Pipeline using GitHub Actions
 
 ## Result
 
-I was successfully in achieving initial goal to deploying a CI/CD Pipe using GitHub Actions.
+I was successfully in achieving initial goal to deploying a CI/CD Pipeline using GitHub Actions.
 I set up and deployed a static website to S3 using a YAML file and was then able to make changes to the index.html file which were then rendered.
 
 I learnt how to use GitHub Marketplace to create my YAML and file and also used AWS policy generator the create an S3 Bucket policy.
