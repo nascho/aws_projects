@@ -1,8 +1,8 @@
-# ReactJS Application Deployed with GitGub Actions CI/CD
+# ReactJS Application Deployed with GitGub Actions CI/CD and CloudFront for CDN.
 
 ## Description
 
-The purpose of this project was to deploy a React Application namely my Portfolio Website to an S3 Bucket using GitHub Actions (CI/CD) and set a custom domain with Route 53.
+The purpose of this project was to deploy a React Application namely my Portfolio Website to an S3 Bucket using GitHub Actions (CI/CD), set a custom domain with Route 53 and use CloudFront for distribution.
 
 ## Steps Taken
 
@@ -36,9 +36,18 @@ The purpose of this project was to deploy a React Application namely my Portfoli
 
 ![Route 53](./screenshots/hosted_zone.png)
 
+8. AWS Certificate Manager to issue a SSL/TLS certficate for the custom domain.
+
+![Certificate Manager](./screenshots/acm.png)
+
+9. Since using an S3 Bucket to store the React Application it does not support HTTPS therefore, I used CloudFront to distribute the website and connect the custom domain with a SSL/TLS certififcate and giving the ability to use HTTPS.
+
+![CloudFront](./screenshots/cdn.png)
+
+
 ## Result
 
-I was successfully in achieving initial goal to deploying a CI/CD Pipeline using GitHub Actions to an S3 Bucket and then using a custom domain.
+I was successfully in achieving initial goal to deploying a CI/CD Pipeline using GitHub Actions to an S3 Bucket and then using a custom domain with CloudFront.
 
 I set up and deployed a ReactJS website to S3 using a .Github/Workflow file and was then able to make changes to the application which were then rendered.
 
